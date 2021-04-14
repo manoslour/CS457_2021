@@ -1,0 +1,28 @@
+# Assignment 1
+
+Run the programm as follows:
+
+	crypto MODE TESTFILE
+
+where MODE is:
+
+	1. 'O' --> One Time Pad(OTP)
+	2. 'C' --> Caesar's Cipher
+	3. 'A' --> Affine Cipher
+	4. 'P' --> Playfair Cipher
+	5. 'F' --> Feistel Cipher
+
+and TESTFILE is the name of the testfile for encrpyption/decryption.
+
+Extra Functions:
+
+	1. generateKey(long int size) / Generates a random key of size = size
+	 using /dev/urandom for use in OTP encryption/decryption.
+	
+	2. removeIllegal(uint8_t *plaintext) / Removes illegal chars 
+	(anything other than a-zA-z0-9) from plaintext. 
+
+	3. removeAffineIllegal(uint8_t* plaintext); / Removes illegal chars 
+	(anything other than a-zA-z) from plaintext. 
+
+	4. removeDup(char* key); / Removes duplicate letters from key.
